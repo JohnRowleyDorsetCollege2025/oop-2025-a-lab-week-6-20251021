@@ -11,18 +11,18 @@ namespace oop_2025_b_lab_week_6_20251021.Models
         public static void Run()
         {
             ForLoop1();
-            ForLoop2();
-            ForLoop2();
+            EvenLoop();
+            EvenLoop();
         }
 
         public static void ForLoop1()
         {
-            for (int i = 1; i < 10; i++)
+            for (int i = 1; i <= 10; i++)
             {
                 Console.WriteLine($"Iteration {i}");
             }
         }
-        public static void ForLoop2()
+        public static void EvenLoop()
         {
 
             for (int i = 1; i < 21; i++)
@@ -34,7 +34,7 @@ namespace oop_2025_b_lab_week_6_20251021.Models
 
             }
         }
-        public static void ForLoop3()
+        public static void SumAllNumbers()
         {
             int counter = 0;
             for (int i = 1; i <= 100; i++)
