@@ -60,5 +60,24 @@ namespace oop_2025_b_lab_week_6_20251021.Models
             }
 
         }
+
+        public static void StoreResults()
+        {
+            Dictionary<string, List<int>> testScores = new Dictionary<string, List<int>>();
+
+
+            AddScore("72672", 85);
+            AddScore("72672", 67);
+            AddScore("72672", 34);
+            // Example of adding scores
+            void AddScore(string student, int score)
+            {
+                if (!testScores.ContainsKey(student))
+                {
+                    testScores[student] = new List<int>();
+                }
+                testScores[student].Add(score);
+            }
+        }
     }
 }
